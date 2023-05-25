@@ -1,0 +1,47 @@
+# Basic
+virtualenv
+tqdm
+tabulate
+imutils
+
+# Scientific
+numpy
+scipy
+matplotlib
+pandas
+scikit-learn
+ipykernel
+jupyterlab
+notebook
+
+# Infrastructure
+ansible
+ansible-core
+
+# Imaging
+opencv-python
+opencv-contrib-python
+Pillow
+torch
+torchvision
+timm
+qrcode
+
+# Testing/linting
+pytest
+coverage
+flake8
+black
+isort
+pytest-cov
+codecov
+mypy
+gitchangelog
+mkdocs
+pydantic
+
+# Web-based services
+yfinance
+fastapi
+uvicorn
+Flask
