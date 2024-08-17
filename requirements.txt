@@ -1,5 +1,4 @@
-
-# Infrastructure
+# Commonly-used Python libraries
 ansible
 ansible-core
 black
@@ -17,31 +16,19 @@ matplotlib
 mkdocs
 mypy
 notebook
-
-# Scientific
 numpy
 opencv-contrib-python
-
-# Imaging
 opencv-python
 pandas
 Pillow
 pydantic
-
-# Testing/linting
 pytest
 pytest-cov
 qrcode
 scikit-learn
 scipy
 tabulate
-timm
-torch
-torchvision
 tqdm
 uvicorn
-# Basic
 virtualenv
-
-# Web-based services
 yfinance
