@@ -1,47 +1,47 @@
-# Basic
-virtualenv
-tqdm
-tabulate
-imutils
-
-# Scientific
-numpy
-scipy
-matplotlib
-pandas
-scikit-learn
-ipykernel
-jupyterlab
-notebook
 
 # Infrastructure
 ansible
 ansible-core
+black
+codecov
+coverage
+fastapi
+flake8
+Flask
+gitchangelog
+imutils
+ipykernel
+isort
+jupyterlab
+matplotlib
+mkdocs
+mypy
+notebook
+
+# Scientific
+numpy
+opencv-contrib-python
 
 # Imaging
 opencv-python
-opencv-contrib-python
+pandas
 Pillow
-torch
-torchvision
-timm
-qrcode
+pydantic
 
 # Testing/linting
 pytest
-coverage
-flake8
-black
-isort
 pytest-cov
-codecov
-mypy
-gitchangelog
-mkdocs
-pydantic
+qrcode
+scikit-learn
+scipy
+tabulate
+timm
+torch
+torchvision
+tqdm
+uvicorn
+# Basic
+virtualenv
 
 # Web-based services
 yfinance
-fastapi
-uvicorn
-Flask
