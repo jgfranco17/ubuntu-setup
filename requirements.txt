@@ -2,6 +2,7 @@
 ansible
 ansible-core
 black
+click
 codecov
 coverage
 fastapi
@@ -21,6 +22,8 @@ opencv-contrib-python
 opencv-python
 pandas
 Pillow
+poetry
+pre-commit
 pydantic
 pytest
 pytest-cov

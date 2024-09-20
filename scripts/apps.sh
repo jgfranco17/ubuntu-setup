@@ -18,11 +18,6 @@ sudo apt update
 sudo apt install code
 echo "Installed VS Code"
 
-# Jetbrains Toolbox
-sudo apt-get install -y libfuse2
-curl -fsSL https://raw.githubusercontent.com/nagygergo/jetbrains-toolbox-install/master/jetbrains-toolbox.sh | bash
-echo "Installed Jetbrains Toolbox"
-
 # Vtop GUI
 sudo npm install -g vtop
 echo "Installed vtop"

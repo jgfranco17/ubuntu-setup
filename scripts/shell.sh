@@ -8,7 +8,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugi
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
 
 # Copy the configs to where they should be
-cp ../configs/.devops.zsh-theme $HOME/.oh-my-zsh/themes/devops.zsh-theme
+cp ../configs/devops.zsh-theme $HOME/.oh-my-zsh/themes/devops.zsh-theme
 
 # Vim configuration
 mkdir -p ~/.vim ~/.vim/autoload ~/.vim/backup ~/.vim/colors ~/.vim/plugged
