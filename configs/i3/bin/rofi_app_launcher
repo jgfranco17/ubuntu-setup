@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+rofi -combi-modi drun,window -theme Monokai -show combi -modi combi -theme-str 'window {width: 900;}'

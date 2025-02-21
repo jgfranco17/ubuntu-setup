@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -eux
+
 echo "Preparing to install dev apps..."
 sudo apt update && sudo apt upgrade
 

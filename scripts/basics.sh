@@ -1,4 +1,7 @@
 #!/bin/bash
+
+set -eux
+
 gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 sudo apt update && sudo apt upgrade
 sudo apt install -y curl

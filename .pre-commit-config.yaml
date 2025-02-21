@@ -27,7 +27,7 @@ repos:
     hooks:
       # Otherwise will fail on commit-msg hook
       - id: prettier
-        stages: [commit]
+        stages: [pre-commit]
         exclude: Pipfile.lock
 
   # Security
