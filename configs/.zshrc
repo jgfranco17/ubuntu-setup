@@ -1,3 +1,7 @@
+# ===========================================
+# My ZSH Configuration File
+# ===========================================
+
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -59,9 +63,9 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
+# ===========================================
+# Plugins and customizations
+# ===========================================
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
@@ -91,7 +95,7 @@ command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 export PATH="$PATH:%HOME/.local/bin"
 
-# Golang 1.21
+# Go path
 export PATH=$PATH:/usr/local/go/bin
 
 # Direnv
@@ -105,3 +109,32 @@ export PATH="$PATH:/opt/nvim-linux64/bin"
 
 # Starship
 eval "$(starship init zsh)"
+
+# === Buffer Editor ===
+# Open the current command in your $EDITOR (e.g., neovim)
+# Press Ctrl+X followed by Ctrl+E to trigger
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^X^E' edit-command-line
+
+chpwd() {
+  ls
+}
+
+# Clear screen but keep current command buffer
+function clear-screen-and-scrollback() {
+  echoti civis >"$TTY"
+  printf '%b' '\e[H\e[2J\e[3J' >"$TTY"
+  echoti cnorm >"$TTY"
+  zle redisplay
+}
+zle -N clear-screen-and-scrollback
+bindkey '^Xl' clear-screen-and-scrollback
+
+# Copy current command buffer to clipboard (macOS)
+function copy-buffer-to-clipboard() {
+  echo -n "$BUFFER" | pbcopy
+  zle -M "Copied to clipboard"
+}
+zle -N copy-buffer-to-clipboard
+bindkey '^Xc' copy-buffer-to-clipboard
