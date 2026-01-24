@@ -61,6 +61,7 @@ COMPLETION_WAITING_DOTS="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
+# Load OMZ
 source $ZSH/oh-my-zsh.sh
 
 # ===========================================
@@ -81,7 +82,6 @@ alias gacm="git add -A && git commit -m"
 
 # Dev shortcuts
 alias please="sudo"
-alias use-venv="source ~/dev/venv/bin/activate && echo 'Now using virtual environment: $(which python)'"
 alias upup="sudo apt update && sudo apt upgrade"
 alias zreload="source ~/.zshrc; echo 'Refreshed ZSHRC config!'"
 alias refresh="clear && date && neofetch"
@@ -117,6 +117,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
+# Change-dir hook
 chpwd() {
   ls
 }
