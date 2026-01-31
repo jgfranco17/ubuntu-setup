@@ -61,6 +61,7 @@ alias upup="sudo apt update && sudo apt upgrade"
 alias zreload="source ~/.zshrc; echo 'Refreshed ZSHRC config!'"
 alias refresh="clear && date && neofetch"
 alias bat="batcat"
+alias ls="eza --color=always --long --git --icons=always"
 
 # ===========================================
 # Hooks & Installations
