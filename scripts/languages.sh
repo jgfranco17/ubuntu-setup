@@ -2,7 +2,7 @@
 
 set -eux
 
-GO_VERSION_TO_INSTALL="1.23.2"
+GO_VERSION_TO_INSTALL="1.24.3"
 GO_BIN_ARCHIVE="go${GO_VERSION_TO_INSTALL}.linux-amd64.tar.gz"
 
 sudo rm -rf /usr/local/go
